@@ -13,9 +13,9 @@ function Header() {
   return (
     <section>
       <div className="sections">
-          <img src={HomeLogo} className="logo" alt="Home" />
-          <img src={Profile} className="logo" alt="Profile" />
-          <img src={Coding} className="logo" alt="Projects" />
+          <img title="Home" src={HomeLogo} className="logo home" alt="Home" />
+          <img title="About me" src={Profile} className="logo about" alt="Profile" />
+          <img title="Projects" src={Coding} className="logo projects" alt="Projects" />
         {/* <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -24,11 +24,13 @@ function Header() {
         </a> */}
       </div>
       <div className="hiring">
-          <img src={Moon} className="logo" alt="Dark" />
+          <img title="Dark mode" src={Moon} class="logo theme" alt="Dark" />
           <button className="hire-me-btn">
-            <img src={Plus} className="logo" alt="Plus" /> Hire me
+            <img src={Plus} className="logo" alt="Plus" />
+            <p>Hire me</p>
           </button>
       </div>
+
     </section>
   );
 }

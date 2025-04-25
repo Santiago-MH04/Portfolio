@@ -1,7 +1,7 @@
 section {
-  position: absolute;
+  position: fixed;
   top: 0;
-  width: 100%;
+  width: 35%;
   height: 8%;
 
   display: flex;
@@ -10,11 +10,20 @@ section {
   border: 1px dotted red;
 }
 
-div {
+/*div {
   border: 1px dotted green;
-}
-img {
+}*/
+
+/*img {
   border: 1px dashed blue;
+}*/
+
+.about {
+    transform: translateX(-1.5rem);
+}
+
+.projects {
+    transform: translateX(-3rem);
 }
 
 .sections {
@@ -27,28 +36,42 @@ img {
 .hiring {
     display: flex;
     justify-items: center;
+    justify-content: center;
+        /*justify-content: flex-end;*/
     align-items: center;
-    justify-content: flex-end;
-
-    gap: -5%;
 }
 
 .logo {
-    max-height: 28px;
-    max-width: 30px;
+    max-height: 2.5em;
+    max-width: 3em;
+    /*max-height: 30px;
+    max-width: 35px;*/
+
+    position: relative;
+    left: -10%;
 }
 
 .hire-me-btn {
   display: flex;
   justify-items: center;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
   margin: 0;
   padding: 0;
 
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 175px;
+  max-height: 40px;
+}
+
+.theme {
+    position: relative;
+    transform: translateX(2.3rem);
+}
+
+p {
+    position: relative;
+    left: -10%;
 }
 

@@ -7,10 +7,12 @@
   position: relative;
   height: 100vh;
   width: 35vw;
+  padding-top: 4rem;
   margin: 0 auto;
   text-align: center;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between
   align-items: center;
 
@@ -18,6 +20,37 @@
 
   border: 2px solid
 }
+
+.notice {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+    border: 2px solid blue;
+}
+.metier {
+    text-align: left;
+    border: 2px dashed orange
+}
+.availability {
+    text-align: left;
+    border: 2px dashed orange
+}
+    .metier ul {
+      text-align: left; /* Alinea el texto a la izquierda en el subcontenedor metier */
+      margin: 0; /* Opcional: Ajusta los márgenes si es necesario */
+      padding: 0 1em; /* Opcional: Ajusta el espacio interno */
+    }
+
+    .availability ul {
+      text-align: right; /* Alinea el texto a la derecha en el subcontenedor availability */
+      margin: 0; /* Opcional: Ajusta los márgenes si es necesario */
+      padding: 0; /* Opcional: Ajusta el espacio interno */
+    }
 
 .logo {
   height: 6em;
@@ -30,4 +63,9 @@
   padding: 2em;
   border: 0.5px dotted
 }
+
+/*section {
+  display: flex;
+  flex-direction: column;
+}*/
 
