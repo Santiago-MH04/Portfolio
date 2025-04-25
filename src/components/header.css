@@ -67,7 +67,10 @@ section {
 
 .theme {
     position: relative;
-    transform: translateX(2.3rem);
+    transform: scale(-1, 1) translateX(-2.5rem);  /*Refleja el ícono, y lo mantiene en el sitio que deseo, respectivamente*/
+    /*transform: translateX(3rem);*/
+
+   /* border: 1px solid red*/
 }
 
 p {

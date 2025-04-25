@@ -21,35 +21,39 @@
   border: 2px solid
 }
 
-.notice {
-    width: 100%;
-
+.part1{
     display: flex;
     flex-direction: row;
 
-    align-items: center;
-    justify-content: space-around;
+    border: 1px dashed black
+}
+    .introduction{
+        display: flex;
+        height: 100%;
+        width: 60%;
+        flex-direction: column;
 
-    border: 2px solid blue;
-}
-.metier {
-    text-align: left;
-    border: 2px dashed orange
-}
-.availability {
-    text-align: left;
-    border: 2px dashed orange
-}
-    .metier ul {
-      text-align: left; /* Alinea el texto a la izquierda en el subcontenedor metier */
-      margin: 0; /* Opcional: Ajusta los márgenes si es necesario */
-      padding: 0 1em; /* Opcional: Ajusta el espacio interno */
+        gap: 1rem;
+
+        border: 1px dashed yellowgreen
     }
+        .shortcuts{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
 
-    .availability ul {
-      text-align: right; /* Alinea el texto a la derecha en el subcontenedor availability */
-      margin: 0; /* Opcional: Ajusta los márgenes si es necesario */
-      padding: 0; /* Opcional: Ajusta el espacio interno */
+            /*gap: 1rem;*/
+        }
+    .avatar{
+        display: flex;
+        height: 100%;
+        width: 40%;
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid salmon
     }
 
 .logo {

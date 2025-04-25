@@ -8,5 +8,4 @@ This is my professional portfolio
     <li>Go to the root directory on your terminal</li>
     <li>Type <code>npm run dev</code> on your terminal</li>
     <li>Go to <code>http://localhost:5173/</code> on your browser</li>
-    
 </ol>

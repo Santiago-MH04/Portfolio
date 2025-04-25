@@ -6,21 +6,22 @@ function App() {
 
   return (
     <>
-        <div className="notice">
-            <div className="metier">
-                <ul>
-                    <li>
-                        Software Developer
-                    </li>
-                </ul>
+        <div className="part1">
+            <div className="introduction">
+                <h2>I’m Santiago Marín Higuita</h2>
+                Software developer from Medellín, Colombia.
+                <div className="shortcuts">
+                    <button className="hire-me-btn">
+                      <img src="{Plus}" className="logo" alt="Plus" />
+                      <p>Hire me</p>
+                    </button>
+                    <button className="hire-me-btn resume">
+                      <img src="{Plus}" className="logo" alt="cv" />
+                      <p>My CV</p>
+                    </button>
+                </div>
             </div>
-            <div className="availability">
-                <ul>
-                    <li>
-                        AVAILABLE FOR WORK
-                    </li>
-                </ul>
-            </div>
+            <div className="avatar">Aquí va la foto</div>
         </div>
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
