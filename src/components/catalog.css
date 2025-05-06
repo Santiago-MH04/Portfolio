@@ -1,0 +1,93 @@
+.projects-section {
+  width: 100%;
+
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+
+  border: 2px solid red;
+  border-radius: 1rem;
+}
+    .projects-banner {
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.3rem;
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+
+        border: 2px double pink;
+    }
+        .projects-marker {
+            /*height: 2rem;*/
+        }
+        .projects-header, .projects-link {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 1rem;
+            border: 2px inset orange;
+        }
+    .projects-list {
+        width: 100%;
+
+        padding: 1rem 0 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box; /* Incluye padding dentro del ancho */
+
+        border: 1px ridge cyan;
+        border-radius: 1rem;
+    }
+.project-mini {
+    height: 12%;
+    width: 95%;
+    /*padding: 0 0 0 0.5rem;*/
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    border: 1px solid green;
+}
+    .circle-logo-project {
+        width: 3.2em;
+        height: 3.2em;
+
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        background-color: #FFFFFF;
+
+        border-radius:50%;
+        border: 2px solid green;
+    }
+    .project-highlights {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 0.5rem;
+        gap: 1rem;
+
+        border: 2px dotted blue;
+    }
+    .view_more_arrow {
+        max-height: 1.75em;
+        max-width: 1.5em;
+    }

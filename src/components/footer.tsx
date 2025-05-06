@@ -15,12 +15,12 @@ function Footer() {
         <div className="mediaIcons">
           <div className="circle">
             <a href="https://github.com/Santiago-MH04" target="_blank">
-                <img src={GitHub} title="GitHub" className="logo network github" alt="GitHub icon" />
+                <img src={GitHub} title="GitHub profile" className="logo network github" alt="GitHub icon" />
             </a>
           </div>
           <div className="circle">
             <a href="https://www.linkedin.com/in/santiago-marin-higuita-016676194" target="_blank">
-                <img src={LinkedIn} title="LinkedIn" className="logo network linkedin" alt="LinkedIn icon" />
+                <img src={LinkedIn} title="LinkedIn profile" className="logo network linkedin" alt="LinkedIn icon" />
             </a>
           </div>
         </div>

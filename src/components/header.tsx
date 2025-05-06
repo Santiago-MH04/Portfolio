@@ -11,7 +11,7 @@ import './header.css';
 
 function Header() {
   return (
-    <section>
+    <section className="header">
       <div className="sections">
           <img title="Home" src={HomeLogo} className="logo home" alt="Home" />
           <img title="About me" src={Profile} className="logo about" alt="Profile" />
@@ -24,7 +24,7 @@ function Header() {
         </a> */}
       </div>
       <div className="hiring">
-          <img title="Dark mode" src={Moon} class="logo theme" alt="Dark" />
+          <img title="Dark mode" src={Moon} className="logo theme" alt="Dark" />
           <button className="hire-me-btn">
             <img src={Plus} className="logo" alt="Plus" />
             <p>Hire me</p>
