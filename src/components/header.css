@@ -1,14 +1,13 @@
 .header {
   position: fixed;
-  top: 0;
+  top: 0.5em;
+  left: 30.1em;
   width: 35%;
   height: 8%;
 
-  z-index: 10; /* Asigna un valor z-index. Puedes probar con diferentes valores. */
+  z-index: 10;
   opacity: 1;
   background-color: white;
-
-  /*margin: 0 0.5rem 0 0.5rem;*/
 
   display: flex;
   justify-content: space-between;
@@ -16,14 +15,6 @@
   border: 1px dotted red;
   border-radius: 1rem;
 }
-
-/*div {
-  border: 1px dotted green;
-}*/
-
-/*img {
-  border: 1px dashed blue;
-}*/
 
 .about {
     transform: translateX(-1.5rem);
@@ -74,11 +65,14 @@
 
   max-width: 175px;
   max-height: 40px;
+
+  position: relative;
+  left: -5%;
 }
 
 .theme {
     position: relative;
-    transform: scale(-1, 1) translateX(-2.5rem);  /*Refleja el ícono, y lo mantiene en el sitio que deseo, respectivamente*/
+    transform: scale(-1, 1) translateX(-2rem);  /*Refleja el ícono, y lo mantiene en el sitio que deseo, respectivamente*/
     /*transform: translateX(3rem);*/
 
    /* border: 1px solid red*/

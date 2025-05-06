@@ -11,11 +11,11 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
+    {/*<Header />
     <Notice />
     <Introduction1 />
     <Catalog />
+    <Footer />*/}
     <App />
-    <Footer />
   </StrictMode>,
 )

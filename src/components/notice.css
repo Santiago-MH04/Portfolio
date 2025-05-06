@@ -1,6 +1,6 @@
 .notice {
     height: 3vw;
-    width: 35vw;
+    width: 100%;
 
     position: relative;
     display: flex;
@@ -8,17 +8,19 @@
 
     align-items: center;
     justify-content: space-around;
-
-    border: 2px solid blue;
 }
 
 .metier {
     text-align: left;
-    /*border: 2px dashed orange*/
+    border: 2px dashed orange
 }
 .availability {
+    width: 37%;
+    list-style-position: inside;    /* Mueve la viñeta dentro del bloque de contenido del <li> */
+    justify-content:center;
     text-align: left;
-    /*border: 2px dashed orange*/
+    border: 2px dashed orange;
+    border-radius: 0.5rem;
 }
     .metier ul {
       text-align: left; /* Alinea el texto a la izquierda en el subcontenedor metier */

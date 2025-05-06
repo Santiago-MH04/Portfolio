@@ -1,4 +1,5 @@
-import Arrow from '../../public/icons/right-arrow.svg'
+import Arrow from '../../public/icons/pointing-arrow.svg'
+import rightArrow from '../../public/icons/right-arrow.svg'
 
 import React, { useEffect, useState } from 'react';
 import { findSingleProject, findRandomMiniatures } from '../services/ProjectService';
@@ -35,7 +36,7 @@ export const Catalog = () => {
                 </div>
                 <div className="projects-link">
                     <button className="view-projects-btn">
-                      View all <img src="{Plus}" className="project_arrow" alt="view-all-arrow" />
+                      View all <img src={Arrow} className="project-arrow" alt="view-all-arrow" />
                     </button>
                 </div>
             </div>
@@ -53,7 +54,9 @@ export const Catalog = () => {
                         </div>
                         <div>
                             Aquí, redirige a la página con el proyecto completo
-                            <img src={Arrow} className="view_more_arrow" alt="view-more-arrow" />
+                            <a href="#">
+                                <img src={rightArrow} className="view-more-arrow" alt="view-more-arrow" />
+                            </a>
                         </div>
                     </div>
                 ))}

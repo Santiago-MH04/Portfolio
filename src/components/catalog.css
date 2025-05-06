@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
 
-  gap: 1rem;
+  gap: 0.5rem;
 
   border: 2px solid red;
   border-radius: 1rem;
@@ -21,18 +21,21 @@
         align-items: center;
         justify-content: space-between;
 
-        border: 2px double pink;
+        /*border: 2px double pink;*/
     }
-        .projects-marker {
-            /*height: 2rem;*/
-        }
         .projects-header, .projects-link {
             justify-content: center;
             align-items: center;
             text-align: center;
             border-radius: 1rem;
-            border: 2px inset orange;
+            /*border: 2px inset orange;*/
         }
+    .view-projects-btn, .project-arrow {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
     .projects-list {
         width: 100%;
 
@@ -87,7 +90,7 @@
 
         border: 2px dotted blue;
     }
-    .view_more_arrow {
+    .view-more-arrow, .project-arrow {
         max-height: 1.75em;
         max-width: 1.5em;
     }
