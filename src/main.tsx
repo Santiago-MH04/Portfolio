@@ -11,11 +11,6 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/*<Header />
-    <Notice />
-    <Introduction1 />
-    <Catalog />
-    <Footer />*/}
     <App />
   </StrictMode>,
 )

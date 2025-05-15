@@ -1,26 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header';
-import Notice from './components/Notice';
-import Introduction1 from './components/Introduction_1';
-import { Catalog } from './components/Catalog';
-import Footer from './components/Footer';
+import HomePage from './components/HomePage';
+import ProjectDetail from './components/ProjectDetail';
+
+import './App.css';
 
 function App() {
-  /* const [count, setCount] = useState(0) */
-
-  return (
-    <>
-        <section className="mainBody">
-            <Header />
-            <Notice />
-            <Introduction1 />
-            <Catalog />
-            <Footer />
-        </section>
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} /> {/* Página principal */}
+                <Route path="/about-me" element="" /> {/* Página con información personal */}
+                <Route path="/projects" element="" /> {/* Página que lista todas las miniaturas */}
+                <Route path="/project/:id" element={<ProjectDetail />} /> {/* Página que lista todas las miniaturas */}
+                <Route path="/contact-me" element="" /> {/* Página con formulario para contacto */}
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

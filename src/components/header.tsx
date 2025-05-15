@@ -1,5 +1,4 @@
-/* import reactLogo from '../assets/react.svg'
-import viteLogo from '../../public/vite.svg' */
+import { useNavigate } from 'react-router-dom';
 
 import HomeLogo from '../../public/icons/home.svg'
 import Profile from '../../public/icons/profile.svg'
@@ -10,18 +9,40 @@ import Plus from '../../public/icons/plus-circle.svg'
 import './header.css';
 
 function Header() {
+  const navigate = useNavigate(); //Hook para la navegación con React Router
+
+  const handleDispatchClick = (param = "") => { //Por defecto, redirige a la página principal
+      // Construye la URL de la página a la que debe redirigir
+    const projectUrl = `/${param}`;
+      // Redirige a la nueva página usando React Router
+    navigate(projectUrl);
+  }
+
+
   return (
     <section className="header">
       <div className="sections">
+        <a href={`/`} onClick={(e) => {
+            e.preventDefault(); // Evita la navegación predeterminada del enlace
+            handleDispatchClick();
+        }}>
           <img title="Home" src={HomeLogo} className="logo home" alt="Home" />
-          <img title="About me" src={Profile} className="logo about" alt="Profile" />
-          <img title="Projects" src={Coding} className="logo projects" alt="Projects" />
-        {/* <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
+        <a href={`/about-me`} onClick={(e) => {
+            e.preventDefault();
+            handleDispatchClick(about-me);
+        }}>
+          <img title="About me" src={Profile} className="logo about" alt="Profile" />
+        </a>
+        <a href={`/projects`} onClick={(e) => {
+            e.preventDefault();
+            handleDispatchClick(projects);
+        }}>
+          <img title="Projects" src={Coding} className="logo projects" alt="Projects" />
+        </a>
+          {/* <img title="Home" src={HomeLogo} className="logo home" alt="Home" />
+          <img title="About me" src={Profile} className="logo about" alt="Profile" />
+          <img title="Projects" src={Coding} className="logo projects" alt="Projects" /> */}
       </div>
       <div className="hiring">
           <img title="Dark mode" src={Moon} className="logo theme" alt="Dark" />
@@ -30,7 +51,6 @@ function Header() {
             <p>Hire me</p>
           </button>
       </div>
-
     </section>
   );
 }

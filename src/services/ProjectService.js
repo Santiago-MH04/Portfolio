@@ -37,10 +37,11 @@ export const findRandomMiniatures = async () => {
         //Devolver un projecto
 export const findSingleProject = async (id) => {
     try{
-        const response = await axios.get(`${baseUrl}/${id}`);
-        return response.data;
+        const project = await axios.get(`${baseUrl}/${id}`);
+        console.log("Respuesta completa de axios:", project);
+        return project.data;
     } catch (e) {
-        console.error(`Error fetching the project under ID ${id}:`, error);
+        console.error(`Error fetching the project under ID ${id}:`, e);
         throw e;
     }
 }

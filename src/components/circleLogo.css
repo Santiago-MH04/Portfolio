@@ -1,0 +1,14 @@
+.circle-logo-project {
+    width: 3.2em;
+    height: 3.2em;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border-radius:50%;
+    border: 2px solid green;
+}

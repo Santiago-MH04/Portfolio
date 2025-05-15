@@ -52,9 +52,8 @@
         border-radius: 1rem;
     }
 .project-mini {
-    height: 12%;
+    height: 10%;
     width: 95%;
-    /*padding: 0 0 0 0.5rem;*/
     margin-bottom: 0;
 
     display: flex;
@@ -65,21 +64,9 @@
     border-radius: 1rem;
     border: 1px solid green;
 }
-    .circle-logo-project {
-        width: 3.2em;
-        height: 3.2em;
-
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-        background-color: #FFFFFF;
-
-        border-radius:50%;
-        border: 2px solid green;
-    }
     .project-highlights {
+        height: 100%;
+
         display: flex;
         flex-direction: row;
         align-items: center;
