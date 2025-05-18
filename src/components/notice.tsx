@@ -1,12 +1,15 @@
+import { PropTypes } from 'prop-types';
 import './notice.css';
 
-function Notice() {
+export const Notice = ({metier}) => {
+  const metierText = metier ?? "Software Developer"
+
   return (
     <section className="notice">
         <div className="metier">
             <ul>
                 <li>
-                    Software Developer
+                    {metierText}
                 </li>
             </ul>
         </div>
@@ -21,4 +24,9 @@ function Notice() {
   );
 }
 
-export default Notice;
+Notice.propTypes = {
+  metier: PropTypes.string, // La prop 'metier' es un string opcional
+};
+Notice.defaultProps = {
+    metier: "Software Developer",
+};
