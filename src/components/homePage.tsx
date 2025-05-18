@@ -2,6 +2,7 @@ import Header from './Header';
 import Notice from './Notice';
 import Introduction1 from './Introduction_1';
 import { Catalog } from './Catalog';
+import HiringContact from './HiringContact';
 import Footer from './Footer';
 
 import './homePage.css';
@@ -14,6 +15,7 @@ function HomePage() {
                 <Notice />
                 <Introduction1 />
                 <Catalog />
+                <HiringContact />
                 <Footer />
             </section>
         </>

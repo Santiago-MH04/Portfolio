@@ -53,27 +53,9 @@
     left: -10%;
 }
 
-.hire-me-btn {
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  margin: 0;
-  padding: 0;
-
-  max-width: 175px;
-  max-height: 40px;
-
-  position: relative;
-  left: -5%;
-}
-
 .theme {
     position: relative;
     transform: scale(-1, 1) translateX(-2rem);  /*Refleja el ícono, y lo mantiene en el sitio que deseo, respectivamente*/
-    /*transform: translateX(3rem);*/
 
    /* border: 1px solid red*/
 }

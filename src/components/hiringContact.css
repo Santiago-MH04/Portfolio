@@ -1,0 +1,13 @@
+.hiring-contact {
+    padding-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+
+    gap: 1.5em;
+
+    border: 2px solid red;
+    border-radius: 1em;
+}

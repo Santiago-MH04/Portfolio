@@ -1,0 +1,8 @@
+.hello {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+
+    gap: 1em;
+}

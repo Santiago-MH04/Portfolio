@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
 import ProjectDetail from './components/ProjectDetail';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 
 import './App.css';
 
@@ -11,10 +13,10 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} /> {/* Página principal */}
-                <Route path="/about-me" element="" /> {/* Página con información personal */}
+                <Route path="/about-me" element={<AboutMe />} /> {/* Página con información personal */}
                 <Route path="/projects" element="" /> {/* Página que lista todas las miniaturas */}
                 <Route path="/project/:id" element={<ProjectDetail />} /> {/* Página que lista todas las miniaturas */}
-                <Route path="/contact-me" element="" /> {/* Página con formulario para contacto */}
+                <Route path="/contact-me" element={<ContactMe />} /> {/* Página con formulario para contacto */}
             </Routes>
         </Router>
     );

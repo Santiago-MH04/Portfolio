@@ -1,10 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+
+import HireMeBtn from './HireMeBtn'
 
 import HomeLogo from '../../public/icons/home.svg'
 import Profile from '../../public/icons/profile.svg'
 import Coding from '../../public/icons/coding.svg'
 import Moon from '../../public/icons/moon-night-base.svg'
-import Plus from '../../public/icons/plus-circle.svg'
 
 import './header.css';
 
@@ -18,6 +19,12 @@ function Header() {
     navigate(projectUrl);
   }
 
+  const handleHireMeClick = () => {
+      // Construye la URL de la página a la cual redirigir
+    const hireMeUrl = "/contact-me";
+      // Redirige a la nueva página usando React Router
+    navigate(hireMeUrl);
+  }
 
   return (
     <section className="header">
@@ -30,13 +37,13 @@ function Header() {
         </a>
         <a href={`/about-me`} onClick={(e) => {
             e.preventDefault();
-            handleDispatchClick(about-me);
+            handleDispatchClick("about-me");
         }}>
           <img title="About me" src={Profile} className="logo about" alt="Profile" />
         </a>
         <a href={`/projects`} onClick={(e) => {
             e.preventDefault();
-            handleDispatchClick(projects);
+            handleDispatchClick("projects");
         }}>
           <img title="Projects" src={Coding} className="logo projects" alt="Projects" />
         </a>
@@ -46,10 +53,7 @@ function Header() {
       </div>
       <div className="hiring">
           <img title="Dark mode" src={Moon} className="logo theme" alt="Dark" />
-          <button className="hire-me-btn">
-            <img src={Plus} className="logo" alt="Plus" />
-            <p>Hire me</p>
-          </button>
+          <HireMeBtn />
       </div>
     </section>
   );

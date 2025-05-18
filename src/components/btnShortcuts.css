@@ -1,0 +1,13 @@
+.shortcuts{
+    width: 100%;
+    position: relative;
+    left: 0.75em;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+}

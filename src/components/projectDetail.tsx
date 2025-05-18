@@ -4,6 +4,7 @@ import { findSingleProject } from '../services/ProjectService';
 
 import Header from './Header';
 import { CircleLogo } from './circleLogo';
+import HiringContact from './HiringContact';
 import Footer from './Footer';
 
 import Arrow from '../../public/icons/pointing-arrow.svg'
@@ -85,6 +86,7 @@ function ProjectDetail() {
                     </div>
                 </div>
             </section>
+            <HiringContact />
             <Footer />
         </section>
     );

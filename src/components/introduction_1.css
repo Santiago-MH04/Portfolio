@@ -7,15 +7,15 @@
 }
     .introduction{
         display: flex;
+        flex-direction: column;
         height: 100%;
         width: 60%;
-        flex-direction: column;
 
         gap: 1rem;
 
-        border: 1px dashed yellowgreen
+        border: 1px dashed yellowgreen;
     }
-        .shortcuts{
+        /*.shortcuts{
             display: flex;
             flex-direction: row;
 
@@ -23,8 +23,8 @@
             align-items: center;
             justify-content: space-evenly;
 
-            /*gap: 1rem;*/
-        }
+            *//*gap: 1rem;*//*
+        }*/
     .avatar{
         display: flex;
         height: 100%;
