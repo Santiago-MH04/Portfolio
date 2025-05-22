@@ -1,0 +1,8 @@
+.my-works {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+
+    gap: 0.5em;
+}

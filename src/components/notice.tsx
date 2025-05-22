@@ -1,8 +1,9 @@
 import { PropTypes } from 'prop-types';
 import './notice.css';
 
-export const Notice = ({metier}) => {
+export const Notice = ({metier, availability}) => {
   const metierText = metier ?? "Software Developer"
+  const availabilityText = availability ?? "AVAILABLE FOR WORK"
 
   return (
     <section className="notice">
@@ -14,11 +15,11 @@ export const Notice = ({metier}) => {
             </ul>
         </div>
         <div className="availability">
-            <ul>
-                <li>
-                    AVAILABLE FOR WORK
-                </li>
-            </ul>
+            {availabilityText && (
+              <ul>
+                <li>{availabilityText}</li>
+              </ul>
+            )}
         </div>
     </section>
   );
@@ -26,7 +27,9 @@ export const Notice = ({metier}) => {
 
 Notice.propTypes = {
   metier: PropTypes.string, // La prop 'metier' es un string opcional
+  availability: PropTypes.string, // La prop 'metier' es un string opcional
 };
 Notice.defaultProps = {
     metier: "Software Developer",
+    availability: "AVAILABLE FOR WORK",
 };

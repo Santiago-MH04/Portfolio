@@ -17,16 +17,15 @@ export const Catalog = () => {
       setProjectsMini(projectsMiniResponse);
    }
 
-   const handleViewMoreClick = (projectId) => {
+  const handleViewMoreClick = (projectId) => {
         // Construye la URL de la página del proyecto completo
-      const projectUrl = `/project/${projectId}`; // Ejemplo de ruta, ajústala según tu configuración
-
+      const projectUrl = projectId ? `/project/${projectId}` : '/projects'; // Usa '/projects' si no hay projectId, y te manda a ver todos los proyectos
         // Redirige a la nueva página usando React Router
       navigate(projectUrl);
 
         // Si no estás usando React Router, puedes usar window.location.href:
       // window.location.href = projectUrl;
-   }
+  }
 
    useEffect(() => {
        getProjectsMini();
@@ -42,7 +41,10 @@ export const Catalog = () => {
                     </ul>
                 </div>
                 <div className="projects-link">
-                    <button className="view-projects-btn">
+                    <button className="view-projects-btn" onClick={(e) => {
+                        e.preventDefault(); // Evita la navegación predeterminada del enlace
+                        handleViewMoreClick();
+                    }}>
                       View all <img src={Arrow} className="project-arrow" alt="view-all-arrow" />
                     </button>
                 </div>

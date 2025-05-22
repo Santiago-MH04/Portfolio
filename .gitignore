@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-#Mines to ignore
+# Mines to ignore
 **/icons/
 .env

@@ -56,7 +56,7 @@
     padding: 10px;
     background-color: #4CAF50; /* Verde para éxito */
     color: white;
-    border-radius: 5px;
+    border-radius: 1em;
     text-align: center;
     font-size: 16px;
     transition: opacity 0.5s ease-out;
