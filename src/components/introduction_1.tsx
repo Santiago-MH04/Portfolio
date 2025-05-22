@@ -8,7 +8,7 @@ function Introduction_1(){
             <div className="introduction">
                 <h2>I’m Santiago Marín Higuita</h2>
                 Software developer from Medellín, Colombia.
-                {/* <BtnShortcuts /> */}
+                <BtnShortcuts />
             </div>
             <div className="avatar">
                 Aquí va la foto

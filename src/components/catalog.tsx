@@ -4,7 +4,7 @@ import rightArrow from '../../public/icons/right-arrow.svg'
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CircleLogo } from './circleLogo';
-import { findSingleProject, findRandomMiniatures } from '../services/ProjectService';
+import { /* findSingleProject, */ findRandomMiniatures } from '../services/ProjectService';
 
 import './catalog.css'
 
