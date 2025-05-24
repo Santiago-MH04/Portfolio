@@ -1,16 +1,16 @@
-import Arrow from '../../public/icons/pointing-arrow.svg'
-import rightArrow from '../../public/icons/right-arrow.svg'
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CircleLogo } from './circleLogo';
+
+import { ProjectMini } from './ProjectMini';
 import { /* findSingleProject, */ findRandomMiniatures } from '../services/ProjectService';
+
+import Arrow from '../../public/icons/pointing-arrow.svg'
 
 import './catalog.css'
 
 export const Catalog = () => {
    const [ProjectsMini, setProjectsMini] = useState([]);
-   const navigate = useNavigate(); //Hook para la navegación con React Router
+   const navigate = useNavigate(); // Hook para la navegación con React Router
 
    const getProjectsMini = async () => {
       const projectsMiniResponse = await findRandomMiniatures();
@@ -48,27 +48,11 @@ export const Catalog = () => {
                       View all <img src={Arrow} className="project-arrow" alt="view-all-arrow" />
                     </button>
                 </div>
-            </div>
+             </div>
             <div className="projects-list">
-                {ProjectsMini.map(({title, keywords, logoUrl, _id}) => (
-                    <div key={title} className="project-mini">
-                        <div className="project-highlights">
-                            <CircleLogo title = {title} logoUrl = {logoUrl} />
-                            <div className="project-intro">
-                                <h2>{title}</h2>
-                                <h4>{keywords.join(', ')}</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <a href={`/project/${_id}`} onClick={(e) => {
-                                e.preventDefault(); // Evita la navegación predeterminada del enlace
-                                handleViewMoreClick(_id);
-                            }}>
-                                <img src={rightArrow} className="view-more-arrow" alt="view-more-arrow" />
-                            </a>
-                        </div>
-                    </div>
-                ))}
+                {ProjectsMini.map(project => {
+                    return (<ProjectMini projectDTO={project} key={project._id} handleViewMoreClick={handleViewMoreClick} />)
+                })}
             </div>
         </div>
     );

@@ -1,0 +1,30 @@
+.project-mini {
+    height: 10%;
+    width: 95%;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    border: 1px solid green;
+}
+    .project-highlights {
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 0.5rem;
+        gap: 1rem;
+
+        border: 2px dotted blue;
+    }
+    .view-more-arrow{
+        max-height: 1.75em;
+        max-width: 1.5em;
+    }
